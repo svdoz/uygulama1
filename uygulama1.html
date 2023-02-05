@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ugulama 1</title>
+</head>
+
+<style>
+
+#arttır{
+
+background-color: green;
+color: white;
+width: 35px;
+height: 30px;
+border: none;
+border-radius: 30%;
+font-size: 20px;
+
+}
+#azalt{
+
+background-color: red;
+color: white;
+width: 35px;
+height: 30px;
+border: none;
+border-radius: 30%;
+font-size: 20px;
+
+}
+#text {
+
+border-radius: 3%;
+}
+
+</style>
+
+<body>
+<input id="text" type="text" value="0"/>  
+<button onclick="artirma()" id="arttır">+</button>
+<button onclick="azaltma()" id="azalt">-</button>
+
+
+<script>
+
+
+function artirma () {
+
+var a = document.getElementById("text").value;
+a = Number(a) ; 
+a += 1;
+document.getElementById("text").value = a ;
+
+}
+function azaltma () {
+
+var a = document.getElementById("text").value;
+a = Number(a) ; 
+a -= 1;
+document.getElementById("text").value = a ;
+
+}
+
+</script>
+         
+</body>
+</html>
